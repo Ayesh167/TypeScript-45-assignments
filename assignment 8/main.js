@@ -1,4 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-let favNumber = 7;
-console.log(`My favourite number is ${favNumber}`);
+console.log(4 + 4);
+console.log(9 - 1);
+console.log(4 * 2);
+console.log(24 / 3);

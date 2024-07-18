@@ -1,6 +1,6 @@
-function city_country(city:string,Country:string): string{
-    return `${city} , ${Country}`;
+function describe_city(city:string,country:string = "Pakistan"){
+    console.log(`${city} is in ${country}`);
 }
-console.log(city_country("karachi","Pakistan"));
-console.log(city_country("Tokyo","Japan"));
-console.log(city_country("Berlin","Germany"));
+describe_city("karachi");
+describe_city("Lahore");
+describe_city("london","United kingdom");

@@ -1,10 +1,11 @@
-let errorArray: string[] = ["A","B","C","D"];
-//MAKING ERROR BY ACCESSING INDEX OF ERROR
-
-//console.log(errorArray[10]);
-
-
-//Error removed
-console.log(errorArray[1]);
-
-
+interface  car {
+    carName: string;
+    color: string;
+    year: number;
+}
+let car = {
+    carName: "corolla",
+    color: "black",
+    year: 2024
+};
+console.log(car);

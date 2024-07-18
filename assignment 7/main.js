@@ -1,5 +1,9 @@
 "use strict";
-console.log(4 + 4);
-console.log(9 - 1);
-console.log(4 * 2);
-console.log(24 / 3);
+//addition
+console.log(5 + 3);
+//subtraction
+console.log(10 - 2);
+//multiplication
+console.log(2 * 4);
+//division
+console.log(16 / 2);

@@ -1,13 +1,17 @@
 "use strict";
-let current_users = ["Haroon", "Ayesha", "Nimra", "Usman", "Aatika"];
-let new_users = ["Bushra", "Mariyum", "Ali", "Aatika", "Ayesha"];
-//loop to check user names
-new_users.forEach(new_one_user => {
-    let ourConditions = current_users.some(current_one_users => current_one_users.toLowerCase() === new_one_user.toLowerCase());
-    if (ourConditions) {
-        console.log(`sorry ${new_one_user} is already taken`);
-    }
-    else {
-        console.log(`This user name ${new_one_user} is available`);
-    }
-});
+let userNames = ["Haroon", "Ayesha", "Rabia", "Admin"];
+userNames = [];
+if (userNames.length === 0) {
+    console.log("WE need to fing some users");
+}
+else {
+    //using for each loop on array
+    userNames.forEach(oneuser => {
+        if (oneuser === "Admin") {
+            console.log(`Hello ${oneuser}, would you like to see a status report`);
+        }
+        else {
+            console.log(`Hello ${oneuser}, thank you for logging in again`);
+        }
+    });
+}

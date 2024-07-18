@@ -1,20 +1,35 @@
 "use strict";
-let countriesToVisit = ["Saudia", "Dubai", "Turkey", "Africa"];
-//first printing array in it's original order
-console.log("original order", countriesToVisit);
-//now printing in alphabetical format
-console.log("alphabetical order", [...countriesToVisit].sort());
-//now printing original array again to see there is no change in orirginal array 
-console.log("original array is still in it's original order", countriesToVisit);
-//now printing array in reverse alphabetical order without changing original order
-console.log("reverse alphabetical order", [...countriesToVisit].sort().reverse());
-//again printing to show there is no change in original array
-console.log("original order", countriesToVisit);
-//reverse the order of list
-console.log("reverse original array", countriesToVisit.reverse());
-//now again reversing for back to original order
-console.log("reverse array again for back to it's original order", countriesToVisit.reverse());
-//sorting list in alphabetical order
-console.log("sort array in alphabetical order", countriesToVisit.sort());
-//now reversing array 
-console.log("sorting array in reverse alphabetical order", countriesToVisit.reverse());
+// creating a guest list array
+let guestList = ["Nimra", "Tahira", "Ayesha", "Faiza"];
+//remving 1 person
+let cantCome = guestList[3];
+console.log(cantCome, "is not coming");
+//replacing 1 person
+guestList.splice(3, 3, "Hadiya");
+guestList.forEach(guest => console.log(`Hello ${guest}, You're invited to dinner`));
+//adding 3 more people
+console.log("Good New!!! Now I found a new bigger table so I'm going to invite three more people.");
+//adding 1 in start
+guestList.unshift("Imama");
+//adding 1 in end
+guestList.push("Sahar");
+//adding a guest in middle
+let middleGuest = Math.floor(guestList.length / 2);
+guestList.splice(middleGuest, 0, "Hiba");
+//printing new messages
+console.log("Updated list of our guests");
+guestList.forEach(newList => console.log(`Hello ${newList}, You're invited to dinner.`));
+//shrinking guests because you have space for only two
+console.log("Unfortunately, the new dinner table won't arrive on time , so I can only invite two people at dinner");
+//removing guests untill only two remains
+while (guestList.length > 2) {
+    let removeGuest = guestList.pop();
+    console.log(`I'm sorry ${guestList}, I can't invite you to dinner.`);
+}
+console.log("invitation to the 2 remaining guests");
+//inviting last 2 guests
+guestList.forEach(twoGuests => console.log(`${twoGuests}, You're still invited to dinner.`));
+//rempving last 2 guests from list
+guestList.pop();
+guestList.pop();
+console.log("Empty list", guestList);

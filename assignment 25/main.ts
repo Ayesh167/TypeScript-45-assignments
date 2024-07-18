@@ -1,15 +1,9 @@
 let alien_color = "green";
+//if condition is true
 if(alien_color === "green"){
-    console.log("player just earned 5 points for shooting the alien");
+    console.log("Player just earned 5 points.")
 }
-else{
-    console.log("player just earned 10 ponts");
-}
-
-//second version
-if(alien_color === "blue"){
-    console.log("Alien color is blue");
-}
-else{
-    console.log("You're out");
+//if condition is false
+if(alien_color === "red"){
+    console.log("Alien color is red")
 }

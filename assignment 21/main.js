@@ -1,5 +1,7 @@
 "use strict";
-let errorArray = ["A", "B", "C", "D"];
-//MAKING ERROR BY ACCESSING INDEX OF ERROR
-//console.log(errorArray[10]);
-console.log(errorArray[1]);
+let car = {
+    carName: "corolla",
+    color: "black",
+    year: 2024
+};
+console.log(car);

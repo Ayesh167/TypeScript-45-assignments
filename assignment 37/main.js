@@ -1,7 +1,9 @@
 "use strict";
-function describe_city(city, country = "Pakistan") {
-    console.log(`${city} is in ${country}`);
+function make_shirt(size = "Large", printMessage = "I love typescript") {
+    console.log(`Creating a ${size} shirt with the ${printMessage} prints on shirt`);
 }
-describe_city("karachi");
-describe_city("Lahore");
-describe_city("london", "United kingdom");
+make_shirt();
+//calling a function with medium size
+make_shirt("medium");
+//again calling with small size and different message
+make_shirt("small", "I love programming");

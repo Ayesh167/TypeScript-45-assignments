@@ -1,33 +1,15 @@
 "use strict";
 let alien_color = "green";
 if (alien_color === "green") {
-    console.log("the player earned 5 points");
+    console.log("player just earned 5 points for shooting the alien");
 }
-else if (alien_color === "yellow") {
-    console.log("the player earned 10 points");
+else {
+    console.log("player just earned 10 ponts");
 }
-else if (alien_color === "red") {
-    console.log("the player earned 15 points");
+//second version
+if (alien_color === "blue") {
+    console.log("Alien color is blue");
 }
-//version 2
-let alien_color2 = "yellow";
-if (alien_color2 === "green") {
-    console.log("the player earned 5 points");
-}
-else if (alien_color2 === "yellow") {
-    console.log("the player earned 10 points");
-}
-else if (alien_color2 === "red") {
-    console.log("the player earned 15 points");
-}
-//version 3
-let alien_color3 = "red";
-if (alien_color3 === "green") {
-    console.log("the player earned 5 points");
-}
-else if (alien_color3 === "yellow") {
-    console.log("the player earned 10 points");
-}
-else if (alien_color3 === "red") {
-    console.log("the player earned 15 points");
+else {
+    console.log("You're out");
 }

@@ -1,16 +1,6 @@
-function make_album(artist_name:string,album_title:string,tracks?: number){
-    let album:{artist: string, title: string, tracks?:number} ={
-        artist: artist_name,
-        title: album_title,
-    };
-    if(tracks !== undefined){
-        album.tracks = tracks;
-    }
-    return album;
+function city_country(city:string,Country:string): string{
+    return `${city} , ${Country}`;
 }
-let album1 = make_album("Ayesha","Album title 1");
-let album2 = make_album("Nimra","Album title 2");
-let album3 = make_album("Haroon","Album title 3",10);
-console.log(album1);
-console.log(album2);
-console.log(album3);
+console.log(city_country("karachi","Pakistan"));
+console.log(city_country("Tokyo","Japan"));
+console.log(city_country("Berlin","Germany"));

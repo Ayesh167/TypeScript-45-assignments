@@ -1,6 +1,8 @@
-function describe_city(city:string,country:string = "Pakistan"){
-    console.log(`${city} is in ${country}`);
+function make_shirt(size: string = "Large", printMessage: string = "I love typescript"){
+    console.log(`Creating a ${size} shirt with the ${printMessage} prints on shirt`);
 }
-describe_city("karachi");
-describe_city("Lahore");
-describe_city("london","United kingdom");
+make_shirt();
+//calling a function with medium size
+make_shirt("medium");
+//again calling with small size and different message
+make_shirt("small","I love programming");

@@ -1,2 +1,2 @@
-let guestList = ["Nimra","Tahira","Ayesha","Faiza"];
-guestList.forEach(guest => console.log(`Hello ${guest}, I'm inviting you to dinner.`));
+let transportModes = ["Car","Sports car","Bike"];
+transportModes.forEach(mode => console.log(`I would like to own a ${mode}`));

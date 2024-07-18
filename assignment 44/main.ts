@@ -1,17 +1,10 @@
-function create_car(manufacturer:string, model:string, ...options: string[]){
-    //initialize the car object with manufacturer and model
-    let car = {
-        manufacturer: manufacturer,
-        model: model
-    };
-    // add additional object to car object
-    options.forEach(option => {
-        let [ key , value] = option.split(":");
-        car[key.trim()] = value.trim();
-    });
-    return car;
+//making function with rest parameters
+function makeSandwich(...items:string[]){
+    console.log("\n Making a sandwich with the following items:\n");
+    items.forEach(singleItem => console.log(singleItem));
+    console.log("Now enjoy sandwich");
 }
-//call the funtion to create car object
-let my_car = create_car("toyota","corolla","color: black","sunroof: true");
-//print the car object
-console.log(my_car);
+//call function 3 times with 3 different arguments
+makeSandwich("chicken","cheese","ketchup");
+makeSandwich("Bread","Butter");
+makeSandwich("bread","egg");

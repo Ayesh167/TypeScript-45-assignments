@@ -1,19 +1,13 @@
 "use strict";
-let number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-//making loop
-for (let oneNumber of number) {
-    let ordinalNumber;
-    if (oneNumber === 1) {
-        ordinalNumber = "st";
-    }
-    else if (oneNumber === 2) {
-        ordinalNumber = "nd";
-    }
-    else if (oneNumber === 3) {
-        ordinalNumber = "rd";
+let current_users = ["Haroon", "Ayesha", "Nimra", "Usman", "Aatika"];
+let new_users = ["Bushra", "Mariyum", "Ali", "Aatika", "Ayesha"];
+//loop to check user names
+new_users.forEach(new_one_user => {
+    let ourConditions = current_users.some(current_one_users => current_one_users.toLowerCase() === new_one_user.toLowerCase());
+    if (ourConditions) {
+        console.log(`sorry ${new_one_user} is already taken`);
     }
     else {
-        ordinalNumber = "th";
+        console.log(`This user name ${new_one_user} is available`);
     }
-    console.log(`${oneNumber}${ordinalNumber}`);
-}
+});

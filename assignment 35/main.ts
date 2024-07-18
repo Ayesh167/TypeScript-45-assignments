@@ -1,4 +1,5 @@
-function make_shirt(size: string, printMessage: string){
-    console.log(`You selected ${size} size shirt with ${printMessage} prints on shirt`);
+let petAnimals = ["Cat","Dog","Rabbit"];
+for(let oneAnimal of petAnimals){
+    console.log(`A ${oneAnimal} would make a great pet`);
 }
-make_shirt("medium","Shirt is cool");
+console.log("Any of these animals would make a great pet");

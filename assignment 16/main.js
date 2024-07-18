@@ -16,20 +16,5 @@ guestList.push("Sahar");
 //adding a guest in middle
 let middleGuest = Math.floor(guestList.length / 2);
 guestList.splice(middleGuest, 0, "Hiba");
-//printing new messages
 console.log("Updated list of our guests");
 guestList.forEach(newList => console.log(`Hello ${newList}, You're invited to dinner.`));
-//shrinking guests because you have space for only two
-console.log("Unfortunately, the new dinner table won't arrive on time , so I can only invite two people at dinner");
-//removing guests untill only two remains
-while (guestList.length > 2) {
-    let removeGuest = guestList.pop();
-    console.log(`I'm sorry ${guestList}, I can't invite you to dinner.`);
-}
-console.log("invitation to the 2 remaining guests");
-//inviting last 2 guests
-guestList.forEach(twoGuests => console.log(`${twoGuests}, You're still invited to dinner.`));
-//rempving last 2 guests from list
-guestList.pop();
-guestList.pop();
-console.log("Empty list", guestList);

@@ -1,5 +1,5 @@
-let petAnimals = ["Cat","Dog","Rabbit"];
-for(let oneAnimal of petAnimals){
-    console.log(`A ${oneAnimal} would make a great pet`);
+let pizzaNames = ["Chicken pizza","Pepporoni pizza","Cheese pizza"];
+for(let onePizza of pizzaNames){
+    console.log(`I like ${onePizza}`);
 }
-console.log("Any of these animals would make a great pet");
+console.log("I love pizzas");

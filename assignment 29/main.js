@@ -1,11 +1,17 @@
 "use strict";
-let userNames = ["Haroon", "Ayesha", "Rabia", "Admin"];
-//using for each loop on array
-userNames.forEach(oneuser => {
-    if (oneuser === "Admin") {
-        console.log(`Hello ${oneuser}, would you like to see a status report`);
-    }
-    else {
-        console.log(`Hello ${oneuser}, thank you for logging in again`);
-    }
-});
+let favorite_fruit = ["mango", "banana", "orange"];
+if (favorite_fruit.includes("mango")) {
+    console.log("I really like mangoes!");
+}
+if (favorite_fruit.includes("banana")) {
+    console.log("I really like banana!");
+}
+if (favorite_fruit.includes("orange")) {
+    console.log("I really like orange!");
+}
+if (favorite_fruit.includes("cherry")) {
+    console.log("I really like cherry!");
+}
+if (favorite_fruit.includes("strawberry")) {
+    console.log("I really like strawberry!");
+}
